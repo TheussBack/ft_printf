@@ -6,7 +6,7 @@
 /*   By: hrobin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 17:22:40 by hrobin            #+#    #+#             */
-/*   Updated: 2022/12/06 17:50:24 by hrobin           ###   ########.fr       */
+/*   Updated: 2022/12/06 18:55:58 by hrobin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,13 @@ int	ft_formats(va_list args, const char format)
 	if (format == 's')
 		result = ft_printstr(va_arg(args, char *));
 	if (format == 'p')
-		result = ft_print_hex(va_arg(args, uintptr_t), format);
+		result = ft_put_ptr_hexa(va_arg(args, unsigned long));
 	if (format == 'd')
-		result = ft_print_nbr(va_arg(args, int), format);
+		result = ft_putnbr(va_arg(args, int));
 	if (format == 'i')
-		result = ft_print_nbr(va_arg(args, int), format);
+		result = ft_putnbr(va_arg(args, int));
 	if (format == 'u')
-		result = ft_print_nbr(va_arg(args, unsigned int), format);
+		result = ft_put_uns_nbr(va_arg(args, unsigned int));
 	if (format == 'x')
 		result = ft_print_hex(va_arg(args, unsigned int), format);
 	if (format == 'X')

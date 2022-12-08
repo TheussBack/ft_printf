@@ -6,7 +6,7 @@
 /*   By: hrobin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:32:18 by hrobin            #+#    #+#             */
-/*   Updated: 2022/12/06 16:34:37 by hrobin           ###   ########.fr       */
+/*   Updated: 2022/12/08 15:05:41 by hrobin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,7 @@ int	ft_putchar(char c)
 	return (1);
 }
 
-int	ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
-	return (1);
 }

@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hexa.c                                          :+:      :+:    :+:   */
+/*   ft_ptr_hex.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hrobin <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 20:45:34 by hrobin            #+#    #+#             */
-/*   Updated: 2022/12/08 15:28:51 by hrobin           ###   ########.fr       */
+/*   Created: 2022/12/06 18:51:42 by hrobin            #+#    #+#             */
+/*   Updated: 2022/12/06 19:09:00 by hrobin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
-#include <unistd.h>
-	
-int	ft_hexa_len(unsigned long num)
+
+int	ft_ptr_hexa_len(unsigned long int num)
 {
 	int	len;
 
@@ -26,45 +25,34 @@ int	ft_hexa_len(unsigned long num)
 	return (len);
 }
 
-void	ft_hex(unsigned long num, const char mode)
+void	ft_ptr_hexa(unsigned long int num)
 {
 	if (num >= 16)
 	{
-		ft_hex(num / 16, mode);
-		ft_hex(num % 16, mode);
+		ft_ptr_hexa(num / 16);
+		ft_ptr_hexa(num % 16);
 	}
 	else
 	{
 		if (num <= 9)
 			ft_putchar_fd((num + '0'), 1);
 		else
-		{
-			if (mode == 'x')
-				ft_putchar_fd((num - 10 + 'a'), 1);
-			if (mode == 'X')
-				ft_putchar_fd((num - 10 + 'A'), 1);
-		}
+			ft_putchar_fd((num - 10 + 'a'), 1);
 	}
 }
 
-int	ft_print_hex(unsigned long num, const char mode)
+int	ft_put_ptr_hexa(unsigned long ptr)
 {
-	if (num == 0)
-		return (write(1, "0", 1));
+	int	print_length;
+
+	print_length = 0;
+	if (ptr == 0)
+		print_length += write (1, "(nil)", 5);
 	else
-		ft_hex(num, mode);
-	return (ft_hexa_len(num));
+	{
+		print_length += write(1, "0x", 2);
+		ft_ptr_hexa(ptr);
+		print_length += ft_ptr_hexa_len(ptr);
+	}
+	return (print_length);
 }
-
-/*
-int main ()
-{
-	unsigned long	num;
-	char	mode;
-
-	num = -1;
-	mode = 'x';
-	printf("%x\n", -1);
-	ft_print_hex(num, mode);
-}
-*/

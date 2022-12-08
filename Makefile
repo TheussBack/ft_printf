@@ -6,7 +6,7 @@
 #    By: hrobin <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/24 11:11:50 by hrobin            #+#    #+#              #
-#    Updated: 2022/12/06 16:33:54 by hrobin           ###   ########.fr        #
+#    Updated: 2022/12/08 15:00:41 by hrobin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,8 @@ SRCS 		=	${FT_DIR}ft_hexa.c \
 				${FT_DIR}ft_putchar.c \
 				${FT_DIR}ft_putnbr.c \
 				${FT_DIR}ft_putstr.c \
+				${FT_DIR}ft_ptr_hex.c \
+				${FT_DIR}ft_uns_nbr.c \
 				ft_printf.c \
 
 OBJS 		= ${SRCS:.c=.o}
