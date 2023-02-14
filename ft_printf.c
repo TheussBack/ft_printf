@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrobin <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 17:22:40 by hrobin            #+#    #+#             */
-/*   Updated: 2022/12/06 18:55:58 by hrobin           ###   ########.fr       */
+/*   Updated: 2023/02/06 15:08:38 by hrobin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,3 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (printed);
 }
-
-/*
-int main ()
-{
-	const char *str;
-
-	str = "bonjour %d %s \n";
-	ft_printf(str, 7, "prout");
-}
-*/
