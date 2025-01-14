@@ -66,4 +66,3 @@ int main ()
 	printf("%x\n", -1);
 	ft_print_hex(num, mode);
 }
-*/
