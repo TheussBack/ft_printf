@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ptr_hex.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hortense <hortense@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 18:51:42 by hrobin            #+#    #+#             */
-/*   Updated: 2023/02/06 15:08:52 by hrobin           ###   ########.fr       */
+/*   Updated: 2025/01/14 15:10:31 by hortense         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,3 +56,4 @@ int	ft_put_ptr_hexa(unsigned long ptr)
 	}
 	return (print_length);
 }
+

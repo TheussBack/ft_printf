@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_uns_nbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hortense <hortense@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 16:09:25 by hrobin            #+#    #+#             */
-/*   Updated: 2023/02/06 15:09:26 by hrobin           ###   ########.fr       */
+/*   Updated: 2025/01/14 12:07:26 by hortense         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,3 +60,4 @@ int	ft_put_uns_nbr(unsigned int n)
 	}
 	return (print_length);
 }
+

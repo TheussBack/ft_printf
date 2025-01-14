@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hortense <hortense@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 20:45:34 by hrobin            #+#    #+#             */
-/*   Updated: 2023/02/06 15:08:24 by hrobin           ###   ########.fr       */
+/*   Updated: 2025/01/14 12:06:54 by hortense         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ int	ft_print_hex(unsigned long num, const char mode)
 	return (ft_hexa_len(num));
 }
 
-/*
 int main ()
 {
 	unsigned long	num;

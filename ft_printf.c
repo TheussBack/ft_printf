@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hrobin <hrobin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: hortense <hortense@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 17:22:40 by hrobin            #+#    #+#             */
-/*   Updated: 2023/02/06 15:08:38 by hrobin           ###   ########.fr       */
+/*   Updated: 2025/01/14 15:10:37 by hortense         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,3 +68,4 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (printed);
 }
+
